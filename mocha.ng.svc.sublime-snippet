@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1}.svc.spec.js
+ * Unit tests for angular ${2}Svc
+ */
+
+describe('${1}.svc', function () {
+
+	beforeEach(module('${3:app}'))
+
+	//global variables
+	var ${2}Svc;
+
+	beforeEach(inject(function (_${2}Svc_) {
+		${2}Svc = _${2}Svc_
+	}))
+
+	describe('${4:name of task(group of tasks)}', function () {
+
+		it('${5:task description}', function () {
+			
+		})
+	})
+})
+
+
+/**
+ * tips
+ *
+ * chai BDD
+ * expect(object).to.equal(value)
+ *
+ * $httpBackend
+ * afterEach => $httpBackend.flush()
+ * $httpBackend.expect('method', 'path').respond({})
+ *
+ */
+]]></content>
+<tabTrigger>mocha.ng.svc</tabTrigger>
+<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * protractor.conf.js
+ * Protractor configuration
+ * Protractor configuration doc:
+ * https://github.com/angular/protractor/blob/master/docs/referenceConf.js
+*/
+
+exports.config = {
+
+	framework: '${1:mocha}',
+
+	specs: ['${2:test/e2e/**/*.spec.js}'],
+
+	mochaOpts: {
+		enableTimeouts: false  //avoid timeout bugs with mocha and protractor
+	},
+
+	onPrepare: function () {
+		process.env.PORT = 3000
+		require('./src/server')
+	}
+
+}
+]]></content>
+<tabTrigger>protractor.conf</tabTrigger>
+<scope>source.js</scope>
+</snippet>

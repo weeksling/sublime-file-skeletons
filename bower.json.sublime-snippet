@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+{
+  "_bower-docs": "http://bower.io/docs/creating-packages/",
+  "name": "$1",
+  "version": "${2:0.0.1}",
+  "authors": [
+    "${3:name} <${4:email}>"
+  ],
+  "description": "$5",
+  "main": "$6",
+  "license": "${7:MIT}",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
+]]></content>
+<tabTrigger>bower</tabTrigger>
+<scope>source.json</scope>
+</snippet>

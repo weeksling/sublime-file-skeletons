@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:file-name}.spec.js
+ * Protractor test
+ */
+
+describe('${2:test description}', function  () {
+	it ('{${3:task description}}', function () {
+
+		${4:browser.get('http://localhost:3000')}
+
+		//series of actions
+	})
+})
+
+
+/**
+ * tips
+ *
+ * pattern
+ * element(selector).action()
+ *
+ * example
+ * element(by.css('header .menu')).click()
+ *
+ * select methods
+ * by.css(), by.id(), by.model(), by.binding()
+ *
+ * actions
+ * click(), sendKeys(), getText()
+ *
+ * promises
+ * ex: .getText().then(function(text){...})
+ *
+ * tests that visit 3rd party pages
+ * sub "browser.driver.get()" for "browser.get()"
+ *
+ * make test pause
+ * browser.driver.sleep(3000)
+ *
+ * workaround for oauth login
+ * browser.ignoreSynchronization = true
+ */
+]]></content>
+<tabTrigger>protractor.spec</tabTrigger>
+<scope>source.js</scope>
+</snippet>

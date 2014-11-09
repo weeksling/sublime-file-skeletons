@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * karma.conf.js
+ * Karma configuration
+ * Karma configuration file doc:
+ * http://karma-runner.github.io/0.12/config/configuration-file.html
+*/
+
+module.exports = function(config) {
+	config.set({
+		frameworks: [${1:'mocha', 'chai', 'sinon-chai'}],
+		files: [
+			${2:'bower_components/angular/angular.js',
+			'bower_components/angular-route/angular-route.js',
+			'bower_components/angular-mocks/angular-mocks.js',
+			'src/app/modules.js',
+			'src/app/**/*.js',
+			'test/ng/**/*.spec.js'}
+		],
+		reporters: ['progress'],
+		port: 9876,
+		colors: true,
+		logLevel: config.LOG_INFO,
+		autowatch: true,
+		browsers: ['PhantomJS'],
+		singleRun: false
+	})
+}
+]]></content>
+<tabTrigger>karma.conf</tabTrigger>
+<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+{
+	"_package-docs": "https://www.npmjs.org/doc/files/package.json.html",
+	"name": "$1",
+	"private": "true",
+	"version": "${2:0.0.1}",
+	"description": "$3",
+	"keywords": "$4",
+	"homepage": "$5",
+	"bugs": "$6",
+	"license": "${7:MIT}",
+	"author": {
+		"name": "$8",
+		"email": "$9",
+		"url": "$10"
+	},
+	"contributers": [$11],
+	"scripts": {
+		"start": "$12",
+		"test":  "$13"
+	},
+	"engine": "node ${14:0.10.32}",
+	"dependencies": {},
+	"devDependencies": {}
+}
+]]></content>
+<tabTrigger>package</tabTrigger>
+<scope>source.json</scope>
+</snippet>

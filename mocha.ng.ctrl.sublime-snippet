@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1}.ctrl.spec.js
+ * Unit tests for ${2}Ctrl
+ */
+
+describe('${1}.ctrl', function  () {
+
+	beforeEach(module('${3:app}'))
+
+
+	//global variables
+	var $scope
+
+
+	beforeEach( inject(function ($rootScope, $controller) {
+		$scope = $rootScope.$new()
+		$controller('${5:controller name}', {$scope: $scope})
+	}))
+
+	it('${4:task description}', function () {
+
+	})
+})
+
+/**
+ * tips
+ *
+ * chai BDD
+ * expect(object).to.equal(value)
+ *
+ * use global objects to mock services
+ * var mockSvc = {};
+ * beforeEach( inject (function ($q) { mockSvc.funcName = function () {...} }))
+ *
+ * flush promise result
+ * $scope.digest()
+ * 
+ */
+]]></content>
+<tabTrigger>mocha.ng.ctrl</tabTrigger>
+<scope>source.js</scope>
+</snippet>
