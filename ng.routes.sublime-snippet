@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * routes.js
+ * Angular app routes
+ */
+
+angular.module('${1:app}')
+
+.config(function (${2:\$routeProvider}) {
+
+	${2:\$routeProvider}
+
+	.when('/${3}', {
+		templateUrl: '/views/${4}',
+		controller: '${5}Ctrl'
+	})
+
+	${0}
+})
+
+]]></content>
+<tabTrigger>ng.routes</tabTrigger>
+<scope>source.js</scope>
+</snippet>

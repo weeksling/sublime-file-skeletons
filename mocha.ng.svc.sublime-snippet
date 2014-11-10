@@ -19,7 +19,7 @@ describe('${1}.svc', function () {
 	describe('${4:name of task(group of tasks)}', function () {
 
 		it('${5:task description}', function () {
-			
+			${0}
 		})
 	})
 })

@@ -11,6 +11,7 @@ describe('${2:test description}', function  () {
 		${4:browser.get('http://localhost:3000')}
 
 		//series of actions
+		${0}
 	})
 })
 
